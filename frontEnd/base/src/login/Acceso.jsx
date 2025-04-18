@@ -1,8 +1,13 @@
+import { Contenedor, ContendorLateral } from "../components/componetStyle";
+
+
 export default function Acceso() {
 
     return (
         <div>
-            <h1>Hola studiante</h1>
+            <Contenedor>
+                <ContendorLateral></ContendorLateral>
+            </Contenedor>
         </div>
     )
 }
