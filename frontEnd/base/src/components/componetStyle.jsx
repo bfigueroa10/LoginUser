@@ -1,76 +1,74 @@
 import styled from "styled-components";
 
 export const Contenedor = styled.div`
-  background-color: #f4f6f8;
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  padding: 40px 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  background-color: #EAECEC;
+  width: 35%;
+  height: 700px;
+  padding: 30px;
+  border: solid 1px #EAECEC;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(236, 222, 222, 0.1);
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 `;
-
 export const ContendorLateral = styled.div`
-  background-color: #dcd6f7;
-  width: 260px;
-  height: 100vh;
+  background-color: #e2d3d3e4;
+  width: 280px; 
+  height: 760px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.05);
+  position: fixed;      
+  top: 0;               
+  left: 0;             
+  z-index: 1000;        
 `;
 
 export const InputLogin = styled.input`
   width: 100%;
-  padding: 14px 18px;
-  margin: 18px 0;
-  font-size: 15px;
-  border: 1px solid #d1d5db;
-  border-radius: 10px;
-  background-color: #ffffff;
-  transition: all 0.25s ease;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+  max-width: 350px;
+  padding: 12px 16px;
+  margin: 15px 0;
+  margin-left: 260px; 
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
   &::placeholder {
-    color: #9ca3af;
+    color: #aaa;
     font-style: italic;
   }
 
   &:focus {
-    border-color: #6366f1;
-    background-color: #fefefe;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
-    outline: none;
+    border-color: #0077ff;
+    background-color: #fff;
   }
 `;
-
 export const AccessButton = styled.button`
-  background-color: #6366f1;
-  color: #ffffff;
-  padding: 14px 36px;
-  font-size: 15px;
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
 
   &:hover {
-    background-color: #4f46e5;
-    transform: translateY(-2px);
+    background-color: #357ab8;
   }
 
   &:disabled {
-    background-color: #c7d2fe;
+    background-color: #a0a0a0;
     cursor: not-allowed;
   }
 `;
+
